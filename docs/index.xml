@@ -109,7 +109,7 @@ critical for reproducibility.&lt;/p&gt;
 &lt;li&gt;
 &lt;details&gt;
 &lt;p&gt;&lt;summary&gt;
-&lt;strong style=&#34;color:blue;&#34;&gt;✔&lt;/strong&gt; &lt;strong&gt;Repository version:&lt;/strong&gt; &lt;a href=&#34;https://github.com/docmanny/workflowr-blogdown-experiment/tree/4b0eafa2b7eb89f48bea1e1c9d3f281de63089a8&#34; target=&#34;_blank&#34;&gt;4b0eafa&lt;/a&gt;
+&lt;strong style=&#34;color:blue;&#34;&gt;✔&lt;/strong&gt; &lt;strong&gt;Repository version:&lt;/strong&gt; &lt;a href=&#34;https://github.com/docmanny/workflowr-blogdown-experiment/tree/9be675acfd18514a7d7f95b6358356b46e7b9211&#34; target=&#34;_blank&#34;&gt;9be675a&lt;/a&gt;
 &lt;/summary&gt;&lt;/p&gt;
 Great! You are using Git for version control. Tracking code development and
 connecting the code version to the results is critical for reproducibility.
@@ -126,6 +126,7 @@ results were generated:
 Ignored files:
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
+    Ignored:    archetypes/
     Ignored:    data/
 
 Untracked files:
@@ -164,6 +165,23 @@ Message
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+html
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;https://cdn.rawgit.com/docmanny/workflowr-blogdown-experiment/9be675acfd18514a7d7f95b6358356b46e7b9211/content/post/2015-07-23-r-rmarkdown.html&#34; target=&#34;_blank&#34;&gt;9be675a&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+docmanny
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2018-09-30
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+wflow_git_commit(all = T)
+&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left;&#34;&gt;
 html
