@@ -72,7 +72,7 @@ div.section {
 }
 &lt;/style&gt;
 
-&lt;p&gt;&lt;strong&gt;Last updated:&lt;/strong&gt; 2018-09-28&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Last updated:&lt;/strong&gt; 2018-09-30&lt;/p&gt;
 &lt;strong&gt;workflowr checks:&lt;/strong&gt; &lt;small&gt;(Click a bullet for more information)&lt;/small&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -116,7 +116,7 @@ critical for reproducibility.&lt;/p&gt;
 &lt;li&gt;
 &lt;details&gt;
 &lt;p&gt;&lt;summary&gt;
-&lt;strong style=&#34;color:blue;&#34;&gt;✔&lt;/strong&gt; &lt;strong&gt;Repository version:&lt;/strong&gt; &lt;a href=&#34;https://github.com/docmanny/workflowr-blogdown-experiment/tree/e1a7dc0ce8c7967af79f06b9a6c48c505c9b151d&#34; target=&#34;_blank&#34;&gt;e1a7dc0&lt;/a&gt;
+&lt;strong style=&#34;color:blue;&#34;&gt;✔&lt;/strong&gt; &lt;strong&gt;Repository version:&lt;/strong&gt; &lt;a href=&#34;https://github.com/docmanny/workflowr-blogdown-experiment/tree/b2f319ec77d7a9554f8245fe01bbd919de56e23c&#34; target=&#34;_blank&#34;&gt;b2f319e&lt;/a&gt;
 &lt;/summary&gt;&lt;/p&gt;
 Great! You are using Git for version control. Tracking code development and
 connecting the code version to the results is critical for reproducibility.
@@ -168,6 +168,23 @@ Message
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+html
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;https://cdn.rawgit.com/docmanny/workflowr-blogdown-experiment/b2f319ec77d7a9554f8245fe01bbd919de56e23c/content/post/2015-07-23-r-rmarkdown.html&#34; target=&#34;_blank&#34;&gt;b2f319e&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+docmanny
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2018-09-28
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+wflow_git_commit(all = T)
+&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left;&#34;&gt;
 html
