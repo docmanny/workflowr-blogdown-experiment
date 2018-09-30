@@ -116,7 +116,7 @@ critical for reproducibility.&lt;/p&gt;
 &lt;li&gt;
 &lt;details&gt;
 &lt;p&gt;&lt;summary&gt;
-&lt;strong style=&#34;color:blue;&#34;&gt;✔&lt;/strong&gt; &lt;strong&gt;Repository version:&lt;/strong&gt; &lt;a href=&#34;https://github.com/docmanny/workflowr-blogdown-experiment/tree/f8ff424ce73e685669cb85c22a4c6d21ac61f4b6&#34; target=&#34;_blank&#34;&gt;f8ff424&lt;/a&gt;
+&lt;strong style=&#34;color:blue;&#34;&gt;✔&lt;/strong&gt; &lt;strong&gt;Repository version:&lt;/strong&gt; &lt;a href=&#34;https://github.com/docmanny/workflowr-blogdown-experiment/tree/8296756b8849ff7a80da8bbd6ad04bf6c15028e1&#34; target=&#34;_blank&#34;&gt;8296756&lt;/a&gt;
 &lt;/summary&gt;&lt;/p&gt;
 Great! You are using Git for version control. Tracking code development and
 connecting the code version to the results is critical for reproducibility.
@@ -134,6 +134,9 @@ Ignored files:
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
     Ignored:    data/
+
+Untracked files:
+    Untracked:  content/post/2015-07-23-r-rmarkdown_files/
 
 &lt;/code&gt;&lt;/pre&gt;
 Note that any generated files, e.g. HTML, png, CSS, etc., are not included in
@@ -168,6 +171,23 @@ Message
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+html
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;https://cdn.rawgit.com/docmanny/workflowr-blogdown-experiment/8296756b8849ff7a80da8bbd6ad04bf6c15028e1/content/post/2015-07-23-r-rmarkdown.html&#34; target=&#34;_blank&#34;&gt;8296756&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+docmanny
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2018-09-30
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+wflow_git_commit(all = T)
+&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left;&#34;&gt;
 html
