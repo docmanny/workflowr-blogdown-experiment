@@ -65,14 +65,7 @@
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>https://vazquez.bio/2015/07/23/hello-r-markdown/</guid>
-      <description>&lt;!-- Add a small amount of space between sections. --&gt;
-&lt;style type=&#34;text/css&#34;&gt;
-div.section {
-  padding-top: 12px;
-}
-&lt;/style&gt;
-
-&lt;p&gt;&lt;strong&gt;Last updated:&lt;/strong&gt; 2018-09-30&lt;/p&gt;
+      <description>&lt;p&gt;&lt;strong&gt;Last updated:&lt;/strong&gt; 2018-09-30&lt;/p&gt;
 &lt;strong&gt;workflowr checks:&lt;/strong&gt; &lt;small&gt;(Click a bullet for more information)&lt;/small&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -116,7 +109,7 @@ critical for reproducibility.&lt;/p&gt;
 &lt;li&gt;
 &lt;details&gt;
 &lt;p&gt;&lt;summary&gt;
-&lt;strong style=&#34;color:blue;&#34;&gt;✔&lt;/strong&gt; &lt;strong&gt;Repository version:&lt;/strong&gt; &lt;a href=&#34;https://github.com/docmanny/workflowr-blogdown-experiment/tree/8296756b8849ff7a80da8bbd6ad04bf6c15028e1&#34; target=&#34;_blank&#34;&gt;8296756&lt;/a&gt;
+&lt;strong style=&#34;color:blue;&#34;&gt;✔&lt;/strong&gt; &lt;strong&gt;Repository version:&lt;/strong&gt; &lt;a href=&#34;https://github.com/docmanny/workflowr-blogdown-experiment/tree/4b0eafa2b7eb89f48bea1e1c9d3f281de63089a8&#34; target=&#34;_blank&#34;&gt;4b0eafa&lt;/a&gt;
 &lt;/summary&gt;&lt;/p&gt;
 Great! You are using Git for version control. Tracking code development and
 connecting the code version to the results is critical for reproducibility.
@@ -171,6 +164,23 @@ Message
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+html
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;https://cdn.rawgit.com/docmanny/workflowr-blogdown-experiment/4b0eafa2b7eb89f48bea1e1c9d3f281de63089a8/content/post/2015-07-23-r-rmarkdown.html&#34; target=&#34;_blank&#34;&gt;4b0eafa&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+docmanny
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2018-09-30
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+wflow_git_commit(all = T)
+&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left;&#34;&gt;
 html
@@ -367,26 +377,6 @@ Figure 1: A fancy pie chart.
 ## [22] htmltools_0.3.6   knitr_1.20&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
-&lt;!-- Adjust MathJax settings so that all math formulae are shown using
-TeX fonts only; see
-http://docs.mathjax.org/en/latest/configuration.html.  This will make
-the presentation more consistent at the cost of the webpage sometimes
-taking slightly longer to load. Note that this only works because the
-footer is added to webpages before the MathJax javascript. --&gt;
-&lt;script type=&#34;text/x-mathjax-config&#34;&gt;
-  MathJax.Hub.Config({
-    &#34;HTML-CSS&#34;: { availableFonts: [&#34;TeX&#34;] }
-  });
-&lt;/script&gt;
-
-&lt;hr&gt;
-&lt;p&gt;
-  This reproducible &lt;a href=&#34;http://rmarkdown.rstudio.com&#34;&gt;R Markdown&lt;/a&gt;
-  analysis was created with
-  &lt;a href=&#34;https://github.com/jdblischak/workflowr&#34;&gt;workflowr&lt;/a&gt; 1.1.1
-&lt;/p&gt;
-&lt;hr&gt;
 </description>
     </item>
     
