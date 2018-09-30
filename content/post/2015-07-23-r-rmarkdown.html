@@ -59,7 +59,7 @@ critical for reproducibility.</p>
 <li>
 <details>
 <p><summary>
-<strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/docmanny/workflowr-blogdown-experiment/tree/b2f319ec77d7a9554f8245fe01bbd919de56e23c" target="_blank">b2f319e</a>
+<strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/docmanny/workflowr-blogdown-experiment/tree/f8ff424ce73e685669cb85c22a4c6d21ac61f4b6" target="_blank">f8ff424</a>
 </summary></p>
 Great! You are using Git for version control. Tracking code development and
 connecting the code version to the results is critical for reproducibility.
@@ -111,6 +111,23 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align:left;">
+html
+</td>
+<td style="text-align:left;">
+<a href="https://cdn.rawgit.com/docmanny/workflowr-blogdown-experiment/f8ff424ce73e685669cb85c22a4c6d21ac61f4b6/content/post/2015-07-23-r-rmarkdown.html" target="_blank">f8ff424</a>
+</td>
+<td style="text-align:left;">
+docmanny
+</td>
+<td style="text-align:left;">
+2018-09-30
+</td>
+<td style="text-align:left;">
+wflow_git_commit(all = T)
+</td>
+</tr>
 <tr>
 <td style="text-align:left;">
 html
@@ -206,26 +223,26 @@ wflow_git_commit(all = T)
 <p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
 <p>You can embed an R code chunk like this:</p>
 <pre class="r"><code>summary(cars)
-     speed           dist       
- Min.   : 4.0   Min.   :  2.00  
- 1st Qu.:12.0   1st Qu.: 26.00  
- Median :15.0   Median : 36.00  
- Mean   :15.4   Mean   : 42.98  
- 3rd Qu.:19.0   3rd Qu.: 56.00  
- Max.   :25.0   Max.   :120.00  
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
 fit &lt;- lm(dist ~ speed, data = cars)
 fit
-
-Call:
-lm(formula = dist ~ speed, data = cars)
-
-Coefficients:
-(Intercept)        speed  
-    -17.579        3.932  </code></pre>
+## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932</code></pre>
 </div>
 <div id="including-plots" class="section level1">
 <h1>Including Plots</h1>
-<p>You can also embed plots. See Figure <a href="#fig:pie"><strong>??</strong></a> for example:</p>
+<p>You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:</p>
 <pre class="r"><code>par(mar = c(0, 1, 0, 1))
 pie(
   c(280, 60, 20),
@@ -233,75 +250,44 @@ pie(
   col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
   init.angle = -50, border = NA
 )</code></pre>
-<div class="figure" style="text-align: center">
-<img src="figure/2015-07-23-r-rmarkdown.Rmd/pie-1.png" alt="A fancy pie chart." width="672" />
+<div class="figure"><span id="fig:pie"></span>
+<img src="/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
 <p class="caption">
-A fancy pie chart.
+Figure 1: A fancy pie chart.
 </p>
 </div>
-<details>
-<summary><em>Expand here to see past versions of pie-1.png:</em></summary>
-<table style = "border-collapse:separate; border-spacing:5px;">
-<thead>
-<tr>
-<th style="text-align:left;">
-Version
-</th>
-<th style="text-align:left;">
-Author
-</th>
-<th style="text-align:left;">
-Date
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-<a href="https://github.com/docmanny/workflowr-blogdown-experiment/blob/66c082bb7267d0636caf828e8a2453ae487f3f03/content/post/figure/2015-07-23-r-rmarkdown.Rmd/pie-1.png" target="_blank">66c082b</a>
-</td>
-<td style="text-align:left;">
-docmanny
-</td>
-<td style="text-align:left;">
-2018-09-28
-</td>
-</tr>
-</tbody>
-</table>
-</details>
 <div id="session-information" class="section level2">
 <h2>Session information</h2>
 <pre class="r"><code>sessionInfo()
-R version 3.5.0 (2018-04-23)
-Platform: x86_64-pc-linux-gnu (64-bit)
-Running under: Ubuntu 16.04.5 LTS
-
-Matrix products: default
-BLAS: /usr/lib/atlas-base/atlas/libblas.so.3.0
-LAPACK: /usr/lib/atlas-base/atlas/liblapack.so.3.0
-
-locale:
- [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       
- [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   
- [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          
-[10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   
-
-attached base packages:
-[1] stats     graphics  grDevices utils     datasets  methods   base     
-
-other attached packages:
-[1] workflowr_1.1.1
-
-loaded via a namespace (and not attached):
- [1] Rcpp_0.12.18      bookdown_0.7      digest_0.6.17    
- [4] rprojroot_1.3-2   R.methodsS3_1.7.1 backports_1.1.2  
- [7] git2r_0.23.0      magrittr_1.5      evaluate_0.11    
-[10] highr_0.7         blogdown_0.8.5    stringi_1.2.4    
-[13] whisker_0.3-2     R.oo_1.22.0       R.utils_2.7.0    
-[16] rmarkdown_1.10    tools_3.5.0       stringr_1.3.1    
-[19] xfun_0.3          yaml_2.2.0        compiler_3.5.0   
-[22] htmltools_0.3.6   knitr_1.20       </code></pre>
+## R version 3.5.0 (2018-04-23)
+## Platform: x86_64-pc-linux-gnu (64-bit)
+## Running under: Ubuntu 16.04.5 LTS
+## 
+## Matrix products: default
+## BLAS: /usr/lib/atlas-base/atlas/libblas.so.3.0
+## LAPACK: /usr/lib/atlas-base/atlas/liblapack.so.3.0
+## 
+## locale:
+##  [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       
+##  [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   
+##  [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          
+## [10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## other attached packages:
+## [1] workflowr_1.1.1
+## 
+## loaded via a namespace (and not attached):
+##  [1] Rcpp_0.12.18      bookdown_0.7      digest_0.6.17    
+##  [4] rprojroot_1.3-2   R.methodsS3_1.7.1 backports_1.1.2  
+##  [7] git2r_0.23.0      magrittr_1.5      evaluate_0.11    
+## [10] highr_0.7         blogdown_0.8.5    stringi_1.2.4    
+## [13] whisker_0.3-2     R.oo_1.22.0       R.utils_2.7.0    
+## [16] rmarkdown_1.10    tools_3.5.0       stringr_1.3.1    
+## [19] xfun_0.3          yaml_2.2.0        compiler_3.5.0   
+## [22] htmltools_0.3.6   knitr_1.20</code></pre>
 </div>
 </div>
 
