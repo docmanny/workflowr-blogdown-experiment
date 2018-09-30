@@ -65,7 +65,350 @@
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>https://vazquez.bio/2015/07/23/hello-r-markdown/</guid>
-      <description>&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
+      <description>&lt;p&gt;&lt;strong&gt;Last updated:&lt;/strong&gt; 2018-09-30&lt;/p&gt;
+&lt;strong&gt;workflowr checks:&lt;/strong&gt; &lt;small&gt;(Click a bullet for more information)&lt;/small&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;details&gt;
+&lt;p&gt;&lt;summary&gt;
+&lt;strong style=&#34;color:blue;&#34;&gt;✔&lt;/strong&gt; &lt;strong&gt;R Markdown file:&lt;/strong&gt; up-to-date
+&lt;/summary&gt;&lt;/p&gt;
+&lt;p&gt;Great! Since the R Markdown file has been committed to the Git repository, you
+know the exact version of the code that produced these results.&lt;/p&gt;
+&lt;/details&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;details&gt;
+&lt;p&gt;&lt;summary&gt;
+&lt;strong style=&#34;color:blue;&#34;&gt;✔&lt;/strong&gt; &lt;strong&gt;Environment:&lt;/strong&gt; empty
+&lt;/summary&gt;&lt;/p&gt;
+&lt;p&gt;Great job! The global environment was empty. Objects defined in the global
+environment can affect the analysis in your R Markdown file in unknown ways.
+For reproduciblity it’s best to always run the code in an empty environment.&lt;/p&gt;
+&lt;/details&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;details&gt;
+&lt;p&gt;&lt;summary&gt;
+&lt;strong style=&#34;color:blue;&#34;&gt;✔&lt;/strong&gt; &lt;strong&gt;Seed:&lt;/strong&gt; &lt;code&gt;set.seed(20180928)&lt;/code&gt;
+&lt;/summary&gt;&lt;/p&gt;
+&lt;p&gt;The command &lt;code&gt;set.seed(20180928)&lt;/code&gt; was run prior to running the code in the R Markdown file.
+Setting a seed ensures that any results that rely on randomness,
+e.g. subsampling or permutations, are reproducible.&lt;/p&gt;
+&lt;/details&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;details&gt;
+&lt;p&gt;&lt;summary&gt;
+&lt;strong style=&#34;color:blue;&#34;&gt;✔&lt;/strong&gt; &lt;strong&gt;Session information:&lt;/strong&gt; recorded
+&lt;/summary&gt;&lt;/p&gt;
+&lt;p&gt;Great job! Recording the operating system, R version, and package versions is
+critical for reproducibility.&lt;/p&gt;
+&lt;/details&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;details&gt;
+&lt;p&gt;&lt;summary&gt;
+&lt;strong style=&#34;color:blue;&#34;&gt;✔&lt;/strong&gt; &lt;strong&gt;Repository version:&lt;/strong&gt; &lt;a href=&#34;https://github.com/docmanny/workflowr-blogdown-experiment/tree/4be551223cf57a7f83ded865778590f95d3a1b62&#34; target=&#34;_blank&#34;&gt;4be5512&lt;/a&gt;
+&lt;/summary&gt;&lt;/p&gt;
+Great! You are using Git for version control. Tracking code development and
+connecting the code version to the results is critical for reproducibility.
+The version displayed above was the version of the Git repository at the time
+these results were generated.
+&lt;br&gt;&lt;br&gt;
+Note that you need to be careful to ensure that all relevant files for the
+analysis have been committed to Git prior to generating the results (you can
+use &lt;code&gt;wflow_publish&lt;/code&gt; or &lt;code&gt;wflow_git_commit&lt;/code&gt;). workflowr only
+checks the R Markdown file, but you know if there are other scripts or data
+files that it depends on. Below is the status of the Git repository when the
+results were generated:
+&lt;pre&gt;&lt;code&gt;
+Ignored files:
+    Ignored:    .Rhistory
+    Ignored:    .Rproj.user/
+    Ignored:    archetypes/
+    Ignored:    data/
+
+Untracked files:
+    Untracked:  content/post/2015-07-23-r-rmarkdown_files/
+
+&lt;/code&gt;&lt;/pre&gt;
+Note that any generated files, e.g. HTML, png, CSS, etc., are not included in
+this status report because it is ok for generated content to have uncommitted
+changes.
+&lt;/details&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;details&gt;
+&lt;summary&gt;
+&lt;small&gt;&lt;strong&gt;Expand here to see past versions:&lt;/strong&gt;&lt;/small&gt;
+&lt;/summary&gt;
+&lt;ul&gt;
+&lt;table style=&#34;border-collapse:separate; border-spacing:5px;&#34;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+File
+&lt;/th&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Version
+&lt;/th&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Author
+&lt;/th&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Date
+&lt;/th&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+Message
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Rmd
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;https://github.com/docmanny/workflowr-blogdown-experiment/blob/4be551223cf57a7f83ded865778590f95d3a1b62/content/post/2015-07-23-r-rmarkdown.Rmd&#34; target=&#34;_blank&#34;&gt;4be5512&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+docmanny
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2018-09-30
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+wflow_git_commit(all = T)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+html
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;https://cdn.rawgit.com/docmanny/workflowr-blogdown-experiment/4be551223cf57a7f83ded865778590f95d3a1b62/content/post/2015-07-23-r-rmarkdown.html&#34; target=&#34;_blank&#34;&gt;4be5512&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+docmanny
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2018-09-30
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+wflow_git_commit(all = T)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+html
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;https://cdn.rawgit.com/docmanny/workflowr-blogdown-experiment/3183d43c7bd67b7833b6e1d94e8e64c445204445/content/post/2015-07-23-r-rmarkdown.html&#34; target=&#34;_blank&#34;&gt;3183d43&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+docmanny
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2018-09-30
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+wflow_git_commit(all = T)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+html
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;https://cdn.rawgit.com/docmanny/workflowr-blogdown-experiment/490000c7a9a12dec24848fade300c9eed61b44d8/content/post/2015-07-23-r-rmarkdown.html&#34; target=&#34;_blank&#34;&gt;490000c&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+docmanny
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2018-09-30
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+wflow_git_commit(all = T)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+html
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;https://cdn.rawgit.com/docmanny/workflowr-blogdown-experiment/1a0bba07b5b178e7811e3a8e7b8debb3d3d36c54/content/post/2015-07-23-r-rmarkdown.html&#34; target=&#34;_blank&#34;&gt;1a0bba0&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+docmanny
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2018-09-30
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+wflow_git_commit(all = T)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+html
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;https://cdn.rawgit.com/docmanny/workflowr-blogdown-experiment/9be675acfd18514a7d7f95b6358356b46e7b9211/content/post/2015-07-23-r-rmarkdown.html&#34; target=&#34;_blank&#34;&gt;9be675a&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+docmanny
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2018-09-30
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+wflow_git_commit(all = T)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+html
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;https://cdn.rawgit.com/docmanny/workflowr-blogdown-experiment/4b0eafa2b7eb89f48bea1e1c9d3f281de63089a8/content/post/2015-07-23-r-rmarkdown.html&#34; target=&#34;_blank&#34;&gt;4b0eafa&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+docmanny
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2018-09-30
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+wflow_git_commit(all = T)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+html
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;https://cdn.rawgit.com/docmanny/workflowr-blogdown-experiment/8296756b8849ff7a80da8bbd6ad04bf6c15028e1/content/post/2015-07-23-r-rmarkdown.html&#34; target=&#34;_blank&#34;&gt;8296756&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+docmanny
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2018-09-30
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+wflow_git_commit(all = T)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+html
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;https://cdn.rawgit.com/docmanny/workflowr-blogdown-experiment/f8ff424ce73e685669cb85c22a4c6d21ac61f4b6/content/post/2015-07-23-r-rmarkdown.html&#34; target=&#34;_blank&#34;&gt;f8ff424&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+docmanny
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2018-09-30
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+wflow_git_commit(all = T)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+html
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;https://cdn.rawgit.com/docmanny/workflowr-blogdown-experiment/b2f319ec77d7a9554f8245fe01bbd919de56e23c/content/post/2015-07-23-r-rmarkdown.html&#34; target=&#34;_blank&#34;&gt;b2f319e&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+docmanny
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2018-09-28
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+wflow_git_commit(all = T)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+html
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;https://cdn.rawgit.com/docmanny/workflowr-blogdown-experiment/170917c4470f146599822232b56b08ff9b1a4d02/content/post/2015-07-23-r-rmarkdown.html&#34; target=&#34;_blank&#34;&gt;170917c&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+docmanny
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2018-09-28
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+wflow_git_commit(all = T)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+html
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;https://cdn.rawgit.com/docmanny/workflowr-blogdown-experiment/5d3c4ee7056446a5e8893dff9fb401d141d06091/content/post/2015-07-23-r-rmarkdown.html&#34; target=&#34;_blank&#34;&gt;5d3c4ee&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+docmanny
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2018-09-28
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+wflow_git_commit(all = T)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Rmd
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;https://github.com/docmanny/workflowr-blogdown-experiment/blob/66c082bb7267d0636caf828e8a2453ae487f3f03/content/post/2015-07-23-r-rmarkdown.Rmd&#34; target=&#34;_blank&#34;&gt;66c082b&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+docmanny
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2018-09-28
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+wflow_git_commit(all = T)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+html
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;https://cdn.rawgit.com/docmanny/workflowr-blogdown-experiment/66c082bb7267d0636caf828e8a2453ae487f3f03/content/post/2015-07-23-r-rmarkdown.html&#34; target=&#34;_blank&#34;&gt;66c082b&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+docmanny
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2018-09-28
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+wflow_git_commit(all = T)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;hr /&gt;
+&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;R Markdown&lt;/h1&gt;
 &lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
@@ -102,6 +445,39 @@ pie(
 &lt;p class=&#34;caption&#34;&gt;
 Figure 1: A fancy pie chart.
 &lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;session-information&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Session information&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sessionInfo()
+## R version 3.5.0 (2018-04-23)
+## Platform: x86_64-pc-linux-gnu (64-bit)
+## Running under: Ubuntu 16.04.5 LTS
+## 
+## Matrix products: default
+## BLAS: /usr/lib/atlas-base/atlas/libblas.so.3.0
+## LAPACK: /usr/lib/atlas-base/atlas/liblapack.so.3.0
+## 
+## locale:
+##  [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       
+##  [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   
+##  [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          
+## [10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## other attached packages:
+## [1] workflowr_1.1.1
+## 
+## loaded via a namespace (and not attached):
+##  [1] Rcpp_0.12.18      bookdown_0.7      digest_0.6.17    
+##  [4] rprojroot_1.3-2   R.methodsS3_1.7.1 backports_1.1.2  
+##  [7] git2r_0.23.0      magrittr_1.5      evaluate_0.11    
+## [10] highr_0.7         blogdown_0.8.5    stringi_1.2.4    
+## [13] whisker_0.3-2     R.oo_1.22.0       R.utils_2.7.0    
+## [16] rmarkdown_1.10    tools_3.5.0       stringr_1.3.1    
+## [19] xfun_0.3          yaml_2.2.0        compiler_3.5.0   
+## [22] htmltools_0.3.6   knitr_1.20&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
