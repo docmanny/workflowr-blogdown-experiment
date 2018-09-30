@@ -109,7 +109,7 @@ critical for reproducibility.&lt;/p&gt;
 &lt;li&gt;
 &lt;details&gt;
 &lt;p&gt;&lt;summary&gt;
-&lt;strong style=&#34;color:blue;&#34;&gt;✔&lt;/strong&gt; &lt;strong&gt;Repository version:&lt;/strong&gt; &lt;a href=&#34;https://github.com/docmanny/workflowr-blogdown-experiment/tree/f2671c5effeab397f929061173625ba92e0a9fdd&#34; target=&#34;_blank&#34;&gt;f2671c5&lt;/a&gt;
+&lt;strong style=&#34;color:blue;&#34;&gt;✔&lt;/strong&gt; &lt;strong&gt;Repository version:&lt;/strong&gt; &lt;a href=&#34;https://github.com/docmanny/workflowr-blogdown-experiment/tree/393b97314f5b2cfbb3242cd2819abfaa65b960d4&#34; target=&#34;_blank&#34;&gt;393b973&lt;/a&gt;
 &lt;/summary&gt;&lt;/p&gt;
 Great! You are using Git for version control. Tracking code development and
 connecting the code version to the results is critical for reproducibility.
@@ -131,6 +131,34 @@ Ignored files:
 
 Untracked files:
     Untracked:  content/post/2015-07-23-r-rmarkdown_files/
+
+Unstaged changes:
+    Deleted:    docs/.gitkeep
+    Deleted:    docs/.nojekyll
+    Deleted:    docs/categories/index.xml
+    Deleted:    docs/categories/r/index.xml
+    Deleted:    docs/css/fonts.css
+    Deleted:    docs/css/main.css
+    Deleted:    docs/fonts/lato-v11-latin-regular.woff
+    Deleted:    docs/fonts/lato-v11-latin-regular.woff2
+    Deleted:    docs/fonts/merriweather-v13-latin-regular.woff
+    Deleted:    docs/fonts/merriweather-v13-latin-regular.woff2
+    Deleted:    docs/img/portrait.jpg
+    Deleted:    docs/index.json
+    Deleted:    docs/index.xml
+    Deleted:    docs/js/hugo-academic.js
+    Deleted:    docs/js/math-code.js
+    Deleted:    docs/js/search.js
+    Deleted:    docs/js/vendor/reveal.js/plugin/notes/notes.js
+    Deleted:    docs/post/index.xml
+    Deleted:    docs/publication_types/index.xml
+    Deleted:    docs/site.webmanifest
+    Deleted:    docs/sitemap.xml
+    Deleted:    docs/styles.css
+    Deleted:    docs/tags/index.xml
+    Deleted:    docs/tags/plot/index.xml
+    Deleted:    docs/tags/r-markdown/index.xml
+    Deleted:    docs/tags/regression/index.xml
 
 &lt;/code&gt;&lt;/pre&gt;
 Note that any generated files, e.g. HTML, png, CSS, etc., are not included in
@@ -165,6 +193,23 @@ Message
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+html
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;https://cdn.rawgit.com/docmanny/workflowr-blogdown-experiment/393b97314f5b2cfbb3242cd2819abfaa65b960d4/content/post/2015-07-23-r-rmarkdown.html&#34; target=&#34;_blank&#34;&gt;393b973&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+docmanny
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2018-09-30
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+wflow_git_commit(all = T)
+&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left;&#34;&gt;
 Rmd
