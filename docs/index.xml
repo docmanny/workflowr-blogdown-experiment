@@ -71,10 +71,15 @@
 &lt;li&gt;
 &lt;details&gt;
 &lt;p&gt;&lt;summary&gt;
-&lt;strong style=&#34;color:blue;&#34;&gt;✔&lt;/strong&gt; &lt;strong&gt;R Markdown file:&lt;/strong&gt; up-to-date
-&lt;/summary&gt;&lt;/p&gt;
-&lt;p&gt;Great! Since the R Markdown file has been committed to the Git repository, you
-know the exact version of the code that produced these results.&lt;/p&gt;
+&lt;strong style=&#34;color:red;&#34;&gt;✖&lt;/strong&gt; &lt;strong&gt;R Markdown file:&lt;/strong&gt; uncommitted changes
+&lt;/summary&gt;
+The R Markdown file has unstaged changes.
+To know which version of the R Markdown file created these
+results, you’ll want to first commit it to the Git repo. If
+you’re still working on the analysis, you can ignore this
+warning. When you’re finished, you can run
+&lt;code&gt;wflow_publish&lt;/code&gt; to commit the R Markdown file and
+build the HTML.&lt;/p&gt;
 &lt;/details&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -109,7 +114,7 @@ critical for reproducibility.&lt;/p&gt;
 &lt;li&gt;
 &lt;details&gt;
 &lt;p&gt;&lt;summary&gt;
-&lt;strong style=&#34;color:blue;&#34;&gt;✔&lt;/strong&gt; &lt;strong&gt;Repository version:&lt;/strong&gt; &lt;a href=&#34;https://github.com/docmanny/workflowr-blogdown-experiment/tree/4be551223cf57a7f83ded865778590f95d3a1b62&#34; target=&#34;_blank&#34;&gt;4be5512&lt;/a&gt;
+&lt;strong style=&#34;color:blue;&#34;&gt;✔&lt;/strong&gt; &lt;strong&gt;Repository version:&lt;/strong&gt; &lt;a href=&#34;https://github.com/docmanny/workflowr-blogdown-experiment/tree/8e980dd52a965e9356e41099956f8078e7b4502f&#34; target=&#34;_blank&#34;&gt;8e980dd&lt;/a&gt;
 &lt;/summary&gt;&lt;/p&gt;
 Great! You are using Git for version control. Tracking code development and
 connecting the code version to the results is critical for reproducibility.
@@ -131,6 +136,17 @@ Ignored files:
 
 Untracked files:
     Untracked:  content/post/2015-07-23-r-rmarkdown_files/
+
+Unstaged changes:
+    Modified:   content/post/2015-07-23-r-rmarkdown.Rmd
+    Modified:   docs/categories/r/index.xml
+    Modified:   docs/index.json
+    Modified:   docs/index.xml
+    Modified:   docs/post/index.xml
+    Modified:   docs/sitemap.xml
+    Modified:   docs/tags/plot/index.xml
+    Modified:   docs/tags/r-markdown/index.xml
+    Modified:   docs/tags/regression/index.xml
 
 &lt;/code&gt;&lt;/pre&gt;
 Note that any generated files, e.g. HTML, png, CSS, etc., are not included in
@@ -165,6 +181,23 @@ Message
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+html
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;https://cdn.rawgit.com/docmanny/workflowr-blogdown-experiment/8e980dd52a965e9356e41099956f8078e7b4502f/content/post/2015-07-23-r-rmarkdown.html&#34; target=&#34;_blank&#34;&gt;8e980dd&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+docmanny
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2018-09-30
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+wflow_git_commit(all = T)
+&lt;/td&gt;
+&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left;&#34;&gt;
 Rmd

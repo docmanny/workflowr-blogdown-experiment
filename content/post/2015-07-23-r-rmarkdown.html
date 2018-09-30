@@ -4,7 +4,98 @@ author: "Frida Gomam"
 date: 2015-07-23T21:13:14-05:00
 categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
-
+output:
+  blogdown::html_page:
+    pre_knit: |+ 
+      function(input, ...) {
+      require(workflowr)
+      add_bibliography <- function(sessioninfo, lines) {
+      stopifnot(is.character(sessioninfo), is.character(lines))
+      if (!any(stringr::str_detect(lines, '<div id=[\\\'\\\"]refs[\\\'\\\"]>'))) {
+        sessioninfo <- c('', '<div id=\\\"refs\\\"></div>', '', sessioninfo)
+      }
+      return(sessioninfo)
+      }
+      frames <- sys.frames()
+      e <- frames[[length(frames) - 2]]
+    
+      lines_in <- readLines(input)
+      tmpfile <- file.path(tempdir(), basename(input))
+      e$knit_input <- tmpfile
+      wflow_opts <- workflowr:::wflow_options(input)
+      header <- rmarkdown::yaml_front_matter(input)
+      header_opts <- header$workflowr
+      for (opt in names(header_opts)) {
+      wflow_opts[[opt]] <- header_opts[[opt]]
+      }
+      if (!is.null(wflow_opts$knit_root_dir)) {
+      if (!R.utils::isAbsolutePath(wflow_opts$knit_root_dir)) {
+      wflow_opts$knit_root_dir <- absolute(file.path(dirname(input),
+      wflow_opts$knit_root_dir))
+      }
+      }
+      if (is.null(wflow_opts$knit_root_dir)) {
+      wflow_opts$knit_root_dir <- dirname(absolute(input))
+      }
+      if (is.null(e$knit_root_dir)) {
+      e$knit_root_dir <- wflow_opts$knit_root_dir
+      } else {
+      wflow_opts$knit_root_dir <- e$knit_root_dir
+      }
+      header_delims <- stringr::str_which(lines_in, '^-{3}|^\\\\.{3}')
+      if (length(header_delims) >= 2) {
+      header_end <- header_delims[2]
+      header_lines <- lines_in[seq(header_end)]
+      } else {
+      header_end <- 0
+      header_lines <- NULL
+      }
+    
+    
+      output_dir <- workflowr:::get_output_dir(directory = dirname(input))
+    
+      has_code <- workflowr:::detect_code(input)
+    
+      report <- workflowr:::create_report(input, output_dir, has_code, wflow_opts)
+    
+    
+      if (has_code && is.numeric(wflow_opts$seed) && length(wflow_opts$seed) == 1) {
+      seed_chunk <- c('',
+      '```{r seed-set-by-workflowr, echo = FALSE}',
+      sprintf('set.seed(%d)', wflow_opts$seed),
+      '```',
+      '')
+      } else {
+      seed_chunk <- ''
+      }
+    
+    
+      if (has_code && wflow_opts$sessioninfo != '') {
+      sessioninfo <- c('',
+      '## Session information',
+      '',
+      '```{r session-info-chunk-inserted-by-workflowr}',
+      wflow_opts$sessioninfo,
+      '```',
+      '')
+    
+      if (!is.null(header$bibliography)) {
+      sessioninfo <- add_bibliography(sessioninfo, lines_in)
+      }
+      } else {
+      sessioninfo <- ''
+      }
+    
+      lines_out <- c(header_lines,
+      '**Last updated:** 2018-09-30',
+      report,
+      '---',
+      seed_chunk,
+      lines_in[(header_end + 1):length(lines_in)],
+      sessioninfo)
+    
+      writeLines(lines_out, tmpfile)
+      }
 ---
 
 
@@ -15,10 +106,15 @@ tags: ["R Markdown", "plot", "regression"]
 <li>
 <details>
 <p><summary>
-<strong style="color:blue;">✔</strong> <strong>R Markdown file:</strong> up-to-date
-</summary></p>
-<p>Great! Since the R Markdown file has been committed to the Git repository, you
-know the exact version of the code that produced these results.</p>
+<strong style="color:red;">✖</strong> <strong>R Markdown file:</strong> uncommitted changes
+</summary>
+The R Markdown file has unstaged changes.
+To know which version of the R Markdown file created these
+results, you’ll want to first commit it to the Git repo. If
+you’re still working on the analysis, you can ignore this
+warning. When you’re finished, you can run
+<code>wflow_publish</code> to commit the R Markdown file and
+build the HTML.</p>
 </details>
 </li>
 <li>
@@ -53,7 +149,7 @@ critical for reproducibility.</p>
 <li>
 <details>
 <p><summary>
-<strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/docmanny/workflowr-blogdown-experiment/tree/4be551223cf57a7f83ded865778590f95d3a1b62" target="_blank">4be5512</a>
+<strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/docmanny/workflowr-blogdown-experiment/tree/8e980dd52a965e9356e41099956f8078e7b4502f" target="_blank">8e980dd</a>
 </summary></p>
 Great! You are using Git for version control. Tracking code development and
 connecting the code version to the results is critical for reproducibility.
@@ -75,6 +171,17 @@ Ignored files:
 
 Untracked files:
     Untracked:  content/post/2015-07-23-r-rmarkdown_files/
+
+Unstaged changes:
+    Modified:   content/post/2015-07-23-r-rmarkdown.Rmd
+    Modified:   docs/categories/r/index.xml
+    Modified:   docs/index.json
+    Modified:   docs/index.xml
+    Modified:   docs/post/index.xml
+    Modified:   docs/sitemap.xml
+    Modified:   docs/tags/plot/index.xml
+    Modified:   docs/tags/r-markdown/index.xml
+    Modified:   docs/tags/regression/index.xml
 
 </code></pre>
 Note that any generated files, e.g. HTML, png, CSS, etc., are not included in
@@ -109,6 +216,23 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align:left;">
+html
+</td>
+<td style="text-align:left;">
+<a href="https://cdn.rawgit.com/docmanny/workflowr-blogdown-experiment/8e980dd52a965e9356e41099956f8078e7b4502f/content/post/2015-07-23-r-rmarkdown.html" target="_blank">8e980dd</a>
+</td>
+<td style="text-align:left;">
+docmanny
+</td>
+<td style="text-align:left;">
+2018-09-30
+</td>
+<td style="text-align:left;">
+wflow_git_commit(all = T)
+</td>
+</tr>
 <tr>
 <td style="text-align:left;">
 Rmd

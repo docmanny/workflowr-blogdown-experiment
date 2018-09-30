@@ -19,10 +19,7 @@
       
       <guid>https://vazquez.bio/2015/07/23/hello-r-markdown/</guid>
       <description>Last updated: 2018-09-30
-workflowr checks: (Click a bullet for more information)     ✔ R Markdown file: up-to-date 
-Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.
-     ✔ Environment: empty 
-Great job! The global environment was empty. Objects defined in the global environment can affect the analysis in your R Markdown file in unknown ways.</description>
+workflowr checks: (Click a bullet for more information)     ✖ R Markdown file: uncommitted changes  The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run wflow_publish to commit the R Markdown file and build the HTML.</description>
     </item>
     
   </channel>

@@ -4,7 +4,98 @@ author: "Frida Gomam"
 date: 2015-07-23T21:13:14-05:00
 categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
-
+output:
+  blogdown::html_page:
+    pre_knit: |+ 
+      function(input, ...) {
+      require(workflowr)
+      add_bibliography <- function(sessioninfo, lines) {
+      stopifnot(is.character(sessioninfo), is.character(lines))
+      if (!any(stringr::str_detect(lines, '<div id=[\\\'\\\"]refs[\\\'\\\"]>'))) {
+        sessioninfo <- c('', '<div id=\\\"refs\\\"></div>', '', sessioninfo)
+      }
+      return(sessioninfo)
+      }
+      frames <- sys.frames()
+      e <- frames[[length(frames) - 2]]
+    
+      lines_in <- readLines(input)
+      tmpfile <- file.path(tempdir(), basename(input))
+      e$knit_input <- tmpfile
+      wflow_opts <- workflowr:::wflow_options(input)
+      header <- rmarkdown::yaml_front_matter(input)
+      header_opts <- header$workflowr
+      for (opt in names(header_opts)) {
+      wflow_opts[[opt]] <- header_opts[[opt]]
+      }
+      if (!is.null(wflow_opts$knit_root_dir)) {
+      if (!R.utils::isAbsolutePath(wflow_opts$knit_root_dir)) {
+      wflow_opts$knit_root_dir <- absolute(file.path(dirname(input),
+      wflow_opts$knit_root_dir))
+      }
+      }
+      if (is.null(wflow_opts$knit_root_dir)) {
+      wflow_opts$knit_root_dir <- dirname(absolute(input))
+      }
+      if (is.null(e$knit_root_dir)) {
+      e$knit_root_dir <- wflow_opts$knit_root_dir
+      } else {
+      wflow_opts$knit_root_dir <- e$knit_root_dir
+      }
+      header_delims <- stringr::str_which(lines_in, '^-{3}|^\\\\.{3}')
+      if (length(header_delims) >= 2) {
+      header_end <- header_delims[2]
+      header_lines <- lines_in[seq(header_end)]
+      } else {
+      header_end <- 0
+      header_lines <- NULL
+      }
+    
+    
+      output_dir <- workflowr:::get_output_dir(directory = dirname(input))
+    
+      has_code <- workflowr:::detect_code(input)
+    
+      report <- workflowr:::create_report(input, output_dir, has_code, wflow_opts)
+    
+    
+      if (has_code && is.numeric(wflow_opts$seed) && length(wflow_opts$seed) == 1) {
+      seed_chunk <- c('',
+      '```{r seed-set-by-workflowr, echo = FALSE}',
+      sprintf('set.seed(%d)', wflow_opts$seed),
+      '```',
+      '')
+      } else {
+      seed_chunk <- ''
+      }
+    
+    
+      if (has_code && wflow_opts$sessioninfo != '') {
+      sessioninfo <- c('',
+      '## Session information',
+      '',
+      '```{r session-info-chunk-inserted-by-workflowr}',
+      wflow_opts$sessioninfo,
+      '```',
+      '')
+    
+      if (!is.null(header$bibliography)) {
+      sessioninfo <- add_bibliography(sessioninfo, lines_in)
+      }
+      } else {
+      sessioninfo <- ''
+      }
+    
+      lines_out <- c(header_lines,
+      '**Last updated:** `r Sys.Date()`',
+      report,
+      '---',
+      seed_chunk,
+      lines_in[(header_end + 1):length(lines_in)],
+      sessioninfo)
+    
+      writeLines(lines_out, tmpfile)
+      }
 ---
 
 ```{r setup, include=FALSE}
